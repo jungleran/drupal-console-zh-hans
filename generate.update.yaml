@@ -1,0 +1,14 @@
+description: '生成一个 hook_update_N（）的实现'
+help: '<info>"%s"</info> 命令可以帮助您生成 hook_update_N ”%s“'
+options:
+  update-n: '更新号码'
+questions:
+  update-n: '请提供要实现的 Update N'
+messages:
+  wrong-update-n: '更新号码“%s“ 是无效的'
+examples:
+  - description: '生成指定模块名称和 N 值的更新 N 钩子实现'
+    execution: |
+      drupal generate:update  \
+        --module="modulename"  \
+        --update-n="8001"

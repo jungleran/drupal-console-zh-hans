@@ -1,0 +1,30 @@
+description: '生成 Profile。'
+help: '<info>generate:profile</info> 命令可以帮助您生成新的安装 Profile。'
+welcome: '欢迎来到 Drupal Profile生成器'
+options:
+  profile: 'Profile 名称'
+  machine-name: '机读名称（仅限小写和下划线）'
+  description: 'Profile 描述'
+  core: '核心版本'
+  dependencies: '模块依赖关系用逗号分隔（例如：context, panels）'
+  distribution: '发行版名称'
+questions:
+  profile: '输入新 Profile 的名称'
+  machine-name: '输入主题机读名称'
+  description: '输入描述'
+  core: '输入 Drupal 核心版本'
+  dependencies: '您要添加模块依赖关系吗？'
+  distribution: '这个安装 Profile 是打算作为一个发行版吗？'
+warnings:
+  module-unavailable: '警告：以下模块在本地环境中尚不可用“%s“'
+errors:
+  directory-exists: '目标目录“%s“不为空'
+examples:
+  - description: '生成一个 Profile ，指定 Profile 名称，机器名称，描述，核心及其模块依赖关系'
+    execution: |
+      drupal generate:profile  \
+        --profile="NewProfileName"  \
+        --machine-name="newprofilename"  \
+        --description="My Useful Profile"  \
+        --core="8.x"  \
+        --dependencies="modulename"

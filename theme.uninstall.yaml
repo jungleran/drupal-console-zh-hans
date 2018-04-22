@@ -1,0 +1,24 @@
+description: '卸载应用程序中的主题'
+questions:
+  theme: '主题名称（按<回车>停止添加主题）'
+  invalid-theme: '无效主题“%s“'
+options:
+  theme: '要卸载的一个或多个主题应该以逗号分隔'
+messages:
+  no-themes: '您必须提供主题才能卸载。'
+  themes-missing: '无法卸载主题“%s“，因为它们不可用'
+  theme-missing: '无法卸载主题“%s“，因为它不可用'
+  missing-dependencies: '无法卸载主题“%s“由于缺少依赖”%s“'
+  themes-nothing: '什么都不做 所有主题已被卸载：“%s“'
+  theme-nothing: '什么都不做 主题“%s“已经卸载'
+  dependencies: '存在未满足的依赖：“%s“？'
+  theme-success: '“%s“主题已成功卸载'
+  themes-success: '主题“%s“已成功卸载'
+  installed-themes: '只有已安装的主题才会列在自动补全中'
+  invalid-theme-default: '选项默认值仅适用于一个主题'
+  error-default-theme:  '主题“%s“是默认主题，无法卸载。'
+  error-admin-theme: '主题“%s“是管理主题，无法卸载。'
+examples:
+  - description: '卸载指定名称的主题'
+    execution: |
+      drupal theme:uninstall  mytheme

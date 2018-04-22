@@ -1,0 +1,24 @@
+description: '为 Console 生成命令。'
+help: '<info>generate:command</info> 命令可以帮助您生成新的命令。'
+welcome: '欢迎来到 Drupal 命令生成器'
+options:
+  module: '模块的名称（将包含该命令）。'
+  controller-title: '控制器标题。'
+  class: '描述命令的类。（必须以“Command”一词结尾）。'
+  name: '命令名称'
+  container-aware: '执行时是否关心 Drupal 站点安装与否'
+questions:
+  module: common.questions.module
+  class: '输入命令类。（必须以“Command”一词结尾）。'
+  name: '输入命令名称。'
+  container-aware: '执行时是否关心 Drupal 站点安装与否'
+messages:
+  title-not-empty: '标题不能为空'
+examples:
+  - description: '生成一个指定扩展名称，类型，其类和名称的命令。'
+    execution: |
+      drupal generate:command  \
+        --extension="ExtensionName"  \
+        --extension-type="module"  \
+        --class="DefaultCommand"  \
+        --name="CommandName"

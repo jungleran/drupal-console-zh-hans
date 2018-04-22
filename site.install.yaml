@@ -1,0 +1,46 @@
+description: '安装 Drupal 项目'
+arguments:
+  profile: '要安装的 Drupal Profile'
+  langcode: 'Drupal 语言'
+  db-type: '安装 Drupal 使用的数据库类型'
+  db-file: '安装 Drupal 使用的数据库文件'
+  site-name: 'Drupal 站点名称'
+  site-mail: 'Drupal 网站邮箱地址'
+  account-name: 'Drupal 管理员帐户名'
+  account-mail: 'Drupal 管理员帐号邮箱地址'
+  account-pass: 'Drupal 管理员帐户密码'
+questions:
+  profile: '选择安装 Drupal 的 Profile'
+  langcode: '选择 Drupal 安装的语言'
+  db-type: '选择安装 Drupal 使用的数据库类型'
+  site-name: '提供您的 Drupal 站点名称'
+  site-mail: '提供您的 Drupal 站点邮箱地址'
+  account-name: '提供您的 Drupal 管理员帐户名称'
+  account-mail: '提供您的 Drupal 管理员帐户邮件地址'
+  account-pass: '提供您的 Drupal 管理员帐户密码'
+suggestions:
+  site-name: '我的网站'
+messages:
+  installing: '启动 Drupal 8 安装过程'
+  installed: '您的 Drupal 8 安装成功'
+  using-current-database: '使用“%s“数据库，名称和用户分别为”%s“，”%s“'
+  already-installed: 'Drupal 已经安装，尝试删除您的数据库，执行 database:drop  或执行强制安装 site:install --force --no-interaction'
+  sites-backup: '在安装 Drupal 时，sites.php 文件已被临时重命名为backup.sites.php。'
+  sites-restore: 'sites.php 的备份已恢复到 sites.php。'
+  invalid-multisite: '无效的多站点，请使用命令创建多站点：drupal multisite:new %s “%s“'
+examples:
+  - description: '安装 drupal 项目，指定安装类型，语言代码，数据库配置，站点名称，站点电子邮件地址和管理员账户设置'
+    execution: |
+      drupal site:install  standard  \
+        --langcode="en"  \
+        --db-type="mysql"  \
+        --db-host="127.0.0.1"  \
+        --db-name="drupal8"  \
+        --db-user="u53rn4m3"  \
+        --db-pass="dbp455"  \
+        --db-port="3306"  \
+        --site-name="Drupal 8"  \
+        --site-mail="admin@example.com"  \
+        --account-name="admin"  \
+        --account-mail="admin@example.com"  \
+        --account-pass="p455w0rd"

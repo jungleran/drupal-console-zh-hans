@@ -1,0 +1,16 @@
+description: '为应用程序启用 REST 资源'
+arguments:
+    resource-id: 'REST ID'
+    states: '为 Rest 资源启用的 REST 状态'
+    authorizations: '为 Rest 资源启用的认证提供商'
+questions:
+    resource-id: 'REST ID'
+messages:
+    invalid-rest-id: 'REST ID“%s“ 是无效的'
+    formats: '可用的序列化格式'
+    methods: '可用的方法'
+    authentication-providers: '可用的认证提供者'
+    selected-method: '选择方法'
+    selected-formats: '所选格式'
+    selected-authentication-providers: '所选认证提供者'
+    success: 'REST ID“%s“已启用'

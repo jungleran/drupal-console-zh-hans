@@ -1,0 +1,11 @@
+description: '从词汇表中删除分类术语'
+vid: '输入词汇表 ID'
+help: '此命令将 VID 作为参数或全部 VID 作为参数，删除每个词汇表中的每个术语'
+messages:
+  nothing: '所有分类术语从词汇表“%s“已经删除。'
+  processing: '删除“%s“分类术语。'
+  invalid-vocabulary: '无效“%s“词汇表'
+examples:
+  - description: '删除“标签”词汇表的所有术语'
+    execution: |
+      drupal taxonomy:term:delete  tags

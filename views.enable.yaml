@@ -1,0 +1,10 @@
+description: '启用视图'
+messages:
+  enabled-successfully: '视图 “%s“已成功启用'
+examples:
+  - description: '启用内容视图'
+    execution: |
+      drupal views:enable  content
+  - description: '启用首页视图'
+    execution: |
+      drupal views:enable  frontpage

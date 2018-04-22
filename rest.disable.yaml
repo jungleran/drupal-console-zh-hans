@@ -1,0 +1,10 @@
+description: '禁用应用程序的 REST 资源'
+arguments:
+    resource-id: 'REST ID'
+    states: '要禁用 REST 资源 REST 状态'
+questions:
+    resource-id: 'REST ID'
+messages:
+    invalid-rest-id: 'REST ID“%s“ 无效'
+    success: 'REST ID“%s“已禁用'
+    already-disabled: 'REST ID“%s“已经被禁用'

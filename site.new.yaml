@@ -1,0 +1,24 @@
+description: '创建新 Drupal 项目'
+arguments:
+    directory: '安装 Drupal 的目录'
+    version: '下载的 Drupal 版本'
+options:
+    composer: '用 Composer 安装 Drupal'
+    latest: '使用此选项自动选择最新版本'
+    unstable: '使用此选项下载不稳定的版本。如果不使用，您只能安装稳定版本。不要将此与最新版本一起使用。'
+messages:
+    select-release: '选择核心版本'
+    getting-releases: '正在获取 Drupal 的版本'
+    downloading: '正在下载“%s“”%s“'
+    extracting: '为 Drupal “%s“提取文件'
+    no-releases: '没有任何 Drupal 可用的版本'
+    downloaded: 'Drupal“%s“被下载到目录”%s“'
+    error-copying: '重命名目录为“%s“ 时出错'
+    composer: '使用Composer 成功安装 Drupal“%s“ 在 ”%s“'
+    executing: '执行 composer 命令：'
+    missing-directory: '缺少目录参数'
+    missing-version: '缺少版本参数'
+questions:
+    directory: '输入安装 Drupal 的目录名称'
+    composer-release: '请选择一个版本 “%s“'
+    stable: '你想使用稳定版本吗？'

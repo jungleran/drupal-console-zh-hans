@@ -1,0 +1,49 @@
+description: '生成模块。'
+help: ' <info>generate:module</info> 命令可以帮助您生成一个新的模块。'
+welcome: '欢迎来到 Drupal 模块生成器'
+options:
+  module: '模块名'
+  machine-name: '机器名称（仅限小写和下划线）'
+  module-path: '模块的路径'
+  description: '模块描述'
+  core: '核心版本'
+  features-bundle: '使用给定的功能 bundle 名称将模块定义为功能'
+  package: '模块包'
+  module-file: '添加一个 .module 文件'
+  composer: '添加一个 composer.json 文件'
+  dependencies: '模块依赖关系用逗号分隔（例如：context, panels）'
+  test: '生成一个测试类'
+  twigtemplate: '生成主题模板'
+questions:
+  module: '输入新模块名称'
+  machine-name: '输入模块机读名称'
+  module-path: '输入模块路径'
+  description: '输入模块描述'
+  core: '输入 Drupal 核心版本'
+  package: '输入包名称'
+  features-support: '将模块定义为功能'
+  features-bundle: '输入功能 Bundle 名称'
+  module-file: '是否要生成 .module 文件'
+  composer: '您要将 composer.json 文件添加到模块中吗？'
+  dependencies: '您要添加模块依赖关系吗？'
+  test: '是否要生成单元测试类'
+  twigtemplate: '要生成 Themeable 的模板吗？'
+warnings:
+  module-unavailable: '警告以下模块在本地环境中尚不可用“%s“'
+errors:
+  invalid-core: '核心版本“%s“ 是无效的。'
+  directory-exists: '目标目录“%s“不为空'
+examples:
+  - description: '生成指定模块名称，机读名称，路径，描述，drupal 核心和包名称的模块。在这个例子中，composer 文件，单元测试和 twig 模板也被生成'
+    execution: |
+      drupal generate:module  \
+        --module="modulename"  \
+        --machine-name="modulename"  \
+        --module-path="/modules/custom"  \
+        --description="My Awesome Module"  \
+        --core="8.x"  \
+        --package="Custom"  \
+        --module-file  \
+        --composer  \
+        --test  \
+        --twigtemplate

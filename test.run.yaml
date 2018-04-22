@@ -1,0 +1,22 @@
+description: '运行应用中可用测试中的测试单元'
+arguments:
+    test-class: '测试类'
+    test-methods: '要运行的测试方法'
+messages:
+    missing-dependency: '由于缺少依赖关系，测试无法执行'
+    phpunit-pending: '执行 PHPUnit 测试的逻辑尚未实现。'
+    starting-test: '开始测试'
+    test-duration: '测试持续期间'
+    test-pass: '测试通过'
+    test-fail: '测试失败'
+    test-exception: '测试异常'
+    test-debug: '测试调试'
+    url-required: 'URL 选项是运行测试所必需的'
+    test-summary: '测试摘要'
+    group: 分组
+    status: 状态
+    file: 文件
+    method: 方法
+    line: 行
+    message: 消息
+    invalid-class: '测试类“%s“ 不存在。'

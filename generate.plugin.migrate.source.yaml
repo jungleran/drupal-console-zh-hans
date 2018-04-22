@@ -1,0 +1,42 @@
+description: '生成迁移源插件'
+help: '<info>generate:migrate:plugin:source</info> 命令可帮助您生成新的迁移源插件。'
+welcome: '欢迎来到 Drupal 迁移源插件生成器'
+options:
+  module: common.options.module
+  class: '插件类名'
+  plugin-id: '插件 ID'
+  table: '查询的表'
+  alias: '引用到表的简短别名'
+  group-by: '用于结果分组的字段'
+  fields: '要导出的字段'
+questions:
+  module: common.questions.module
+  class: '输入类的名称'
+  plugin-id: '输入插件 ID'
+  table: '输入表名'
+  alias: '输入表的别名'
+  group-by: '如果需要，输入分组的字段'
+  fields:
+    id: '输入字段 ID 或按 <info>回车</ enter>结束'
+    description: '输入字段说明'
+examples:
+  - description: '生成一个迁移源插件，指定模块名称，类，其插件ID，表及其别名'
+    execution: |
+      drupal generate:plugin:migrate:source  \
+        --module="modulename"  \
+        --class="PluginClassName"  \
+        --plugin-id="plugin_class_name"  \
+        --table="DefaultTableName"  \
+        --alias="D"
+  - description: '为用户表的特定字段生成迁移源插件，指定模块名称，类，其插件ID，表，其别名和字段'
+    execution: |
+      drupal generate:plugin:migrate:source  \
+        --module="modulename"  \
+        --class="DefaultPluginClass"  \
+        --plugin-id="default_plugin_class"  \
+        --table="users"  \
+        --alias="u"  \
+        --fields='"id":"id", "description":"the user id"'  \
+        --fields='"id":"username", "description":"the username"'  \
+        --fields='"id":"password", "description":"the user password"'  \
+        --fields='"id":"email", "description":"the user email"'

@@ -1,0 +1,12 @@
+description: '重建节点访问权限。'
+help: '重建将删除对内容的所有权限，并基于当前模块和设置替换权限。'
+options:
+  batch: '以批量模式处理。'
+messages:
+  rebuild: '重建节点访问权限，请稍等。'
+  completed: '完成权限重建。'
+  failed: '重建权限不成功。'
+examples:
+  - description: 重建节点访问权限。
+    execution:
+      drupal node:access:rebuild --batch

@@ -1,0 +1,25 @@
+description: '列出所有可用的命令'
+help: |
+  <info>%command.name%</info> 命令列出所有命令：
+  <info>php %ccommand.full_name%</info>
+  您还可以显示特定命名空间的命令：
+  <info>php %command.full_name% test</info>
+  您还可以使用<comment>--format</comment>选项输出其他格式的信息：
+  <info>php %ccommand.full_name% --format=xml</info>
+  还可以获取原始的命令列表（对于嵌入命令运行程序很有用）：
+  <info>php %ccommand.full_name% --raw</info>
+arguments:
+  namespace: '命名空间名称'
+options:
+  xml: '以 XML 格式输出列表'
+  raw: '输出原始命令列表'
+  format: '输出格式（txt，xml，json或md）'
+
+messages:
+  usage: "<comment>用法：</comment>\n"
+  usage-details: "  命令 [options] [arguments]\n\n"
+  arguments: '<comment>参数：</comment>'
+  options: '<comment>选项：</comment>'
+  help: '<comment>帮助：</comment>'
+  comment: '<comment>命名空间 “%s“ 可用的命令：</ comment>'
+  available-commands: '<comment>可用的命令：</ comment>'

@@ -1,0 +1,15 @@
+description: '将站点切换到维护模式'
+arguments:
+  mode: '站点维护模式'
+messages:
+  maintenance-on: '操作在维护模式下打开'
+  maintenance-off: '操作在维护模式下关闭'
+errors:
+  invalid-mode: '无效维护模式'
+examples:
+  - description: '开启维护'
+    execution: |
+      drupal site:maintenance  on
+  - description: '关闭维护'
+    execution: |
+      drupal site:maintenance  off

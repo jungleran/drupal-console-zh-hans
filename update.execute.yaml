@@ -1,0 +1,12 @@
+description: '在模块中执行特定的 Update N 函数，或者执行全部'
+options:
+  update-n: '具体要执行的 Update N 函数'
+messages:
+  no-module-updates: '没有更新可用于模块“%s“'
+  executing-update: '执行更新函数“%s“位于模块”%s“'
+  module-update-function-not-found: '模块“%s“没有一个更新函数”%s“'
+  executing-required-previous-updates: '执行所需的先前更新'
+examples:
+  - description: '更新所有实体'
+    execution: |
+      drupal update:execute

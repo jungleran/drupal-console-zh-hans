@@ -1,0 +1,7 @@
+messages:
+  change-devel-dumper-plugin: '更改 devel dumper 插件'
+  name-devel-dumper-plugin: 'devel dumper 插件的名称'
+  devel-must-be-installed: '必须安装 Devel'
+  select-debug-dumper: '选择一个调试 Dumper'
+  dumper-not-exist: 'Dumper 不存在'
+  devel-dumper-set: 'Devel Dumper 设置为： %s'

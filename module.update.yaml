@@ -1,0 +1,19 @@
+description: '更新应用程序的核心，模块'
+arguments:
+  module: '要更新的一个或多个模块应该用空格分隔 留空则更新由 Composer 管理的核心和所有模块。'
+options:
+  composer: '使用 Composer 更新模块'
+  simulate: '使用 Composer 模拟更新过程'
+questions:
+  module: '模块名称（按<回车>停止添加模块）'
+  invalid-module: '无效模块“%s“'
+messages:
+  success: '以下模块已成功安装：%s“'
+  composer: '模块“%s“ 成功的被 Composer 管理'
+  only-composer: '此命令仅通过 Composer 更新模块。使用 --composer 选项。'
+  missing-module: '输入要更新的模块名称。'
+examples:
+    - description: '更新模块，指定模块名称和 composer 参数'
+      execution: |
+        drupal module:update  modulename  \
+          --composer

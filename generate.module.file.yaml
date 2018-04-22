@@ -1,0 +1,12 @@
+description: '生成一个 .module 文件'
+help: '<info>generate:module:file</info> 命令可以帮助您生成一个新的 .module 文件'
+welcome: '欢迎来到 Drupal 模块生成器'
+options:
+  module: '模块名称'
+questions:
+  module: '输入新模块名称'
+examples:
+  - description: '生成指定模块名称的 .module 文件'
+    execution: |
+      drupal generate:module:file  \
+        --module="modulename"

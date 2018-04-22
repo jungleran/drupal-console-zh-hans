@@ -1,0 +1,14 @@
+description: '生成一个 Twig 扩展。'
+help: '<info>generate:twig:extension</info> 命令可以帮助您生成一个 Twig 扩展。'
+welcome: '欢迎来到 Drupal Twig 扩展生成器'
+options:
+  name: 'Twig 扩展名称'
+questions:
+  twig-extension: '输入 Twig 扩展名称'
+examples:
+  - description: '生成一个 twig 扩展，指定模块名称，扩展名及其类'
+    execution: |
+      drupal generate:twig:extension  \
+        --module="modulename"  \
+        --name="modulename.twig.extension"  \
+        --class="DefaultTwigExtension"

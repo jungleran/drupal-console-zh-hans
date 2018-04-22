@@ -1,0 +1,20 @@
+description: '生成一个 hook_form_alter() 或 hook_form_FORM_ID_alter 的实现'
+help: '<info>"%s"</info> 命令可以帮助您生成新的 ”%s“'
+options:
+  form-id: '要修改的表单 ID'
+messages:
+  inputs: "您可以添加表单字段来修改表单。选填，按下<info>回车</info> <info>继续</info>"
+  loading-forms: 从 Webprofiler 模块加载表单定义
+  hide-form-elements: '或者，您可以选择要隐藏的表单项'
+  help-already-implemented: 'hook_form_alter 已经在模块“%s“ 实现了'
+examples:
+  - description: '为指定模块名称的空白表单生成 hook_form_alter'
+    execution: |
+      drupal generate:form:alter  \
+        --module="modulename"
+  - description: '用指定模块名称生成一个 hook_form_alter，并包含两个输入字段'
+    execution: |
+      drupal generate:form:alter  \
+        --module="modulename"  \
+        --inputs='"name":"inputtext", "type":"text_format", "label":"InputText", "options":"", "description":"Just an input text", "maxlength":"", "size":"", "default_value":"", "weight":"0", "fieldset":""'  \
+        --inputs='"name":"email", "type":"email", "label":"Email", "options":"", "description":"Just an email input", "maxlength":"", "size":"", "default_value":"", "weight":"0", "fieldset":""'

@@ -1,0 +1,15 @@
+description: '导入模块配置'
+help: ''
+options:
+  bundle: 'Bundle 名称'
+arguments:
+  packages: '包名称'
+questions:
+  packages: '输入要导入的包名称'
+messages:
+  no-packages: '没有可用的包'
+  not-available: '包 %s，不可用。'
+  importing: '导入包 %s。'
+  uninstall: '包 %s 已安装。'
+  reverting: '还原包 %s。'
+  nothing: '没有什么可导入。'

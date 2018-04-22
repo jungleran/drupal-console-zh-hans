@@ -1,0 +1,19 @@
+description: '更新到最新版本。'
+help: '更新到最新版本。'
+options:
+  major: '更新到新的主要版本（如果可用）。'
+  manifest: '覆盖 manifest 文件路径。'
+  current-version: '覆盖要更新的版本。'
+questions:
+  update: '更新版本%s“到”%s”。'
+messages:
+  not-phar: 'CLI 的此实例未安装为 P​​har 存档。'
+  update: '更新到版本“%s”。'
+  success: '更新版本“%s“到”%s”。'
+  check: '从版本：“%s“起检查更新'
+  current-version: '最新版本 ”%s“，已经安装在您的系统上。'
+  instructions: |
+   更新使用：composer global update
+   或者您可以切换到推荐的 Phar 安装
+   composer global remove drupal/console
+   curl https://drupalconsole.com/installer -L -o drupal.phar

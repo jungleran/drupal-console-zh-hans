@@ -1,0 +1,29 @@
+description: '生成 REST 资源插件'
+help: '<info>generate:plugin:rest:resource</info> 命令可以帮助您生成一个新的 REST 资源。'
+welcome: '欢迎来到 Drupal REST 资源插件生成器'
+options:
+  module: common.options.module
+  class: 'REST 资源插件类'
+  plugin-id: 'REST 资源插件 ID'
+  plugin-label: 'REST 资源插件标签'
+  plugin-url: 'REST 资源插件 URL'
+  plugin-states: 'REST 资源插件状态'
+questions:
+  module: common.questions.module
+  class: '输入REST 资源插件名称'
+  plugin-id: '输入REST 资源插件ID'
+  plugin-label: '输入REST 资源插件标签'
+  plugin-url: '输入REST 资源插件名称'
+  plugin-states: '请选择您的资源中要实现的 REST 状态（默认选择 GET）'
+messages:
+  selected-states: '选中的状态'
+examples:
+  - description: '生成使用 GET 的 REST 资源插件，指定模块名称，类，插件ID，其标签，目标 URL 和请求类型'
+    execution: |
+      drupal generate:plugin:rest:resource  \
+        --module="modulename"  \
+        --class="DefaultRestResource"  \
+        --plugin-id="default_rest_resource"  \
+        --plugin-label="Default rest resource"  \
+        --plugin-url="http://rest.resources.example.com"  \
+        --plugin-states='GET'

@@ -1,0 +1,15 @@
+description: '通过图像样式执行 flush 或所有图像样式执行 flush'
+messages:
+  executing-flush: '在图像样式上“%s“执行 flush'
+  success: '请求的所有 flush 都被成功执行'
+options:
+  image-style: '图像样式名称。'
+questions:
+  image-style: '选择要 flush 的图像样式。'
+examples:
+  - description: 'Flush 大图图像样式'
+    execution: |
+      drupal image:styles:flush  large
+  - description: 'Flush 缩略图图像样式'
+    execution: |
+      drupal image:styles:flush  thumbnail

@@ -1,0 +1,20 @@
+description: '导入/配置现有的本地 Drupal 项目'
+help: '<info>site:import:local</info> 为本地现有站点创建 yaml 配置文件。'
+arguments:
+  directory: '现有的 Drupal 根目录'
+  name: '将用于生成站点配置的名称'
+options:
+  environment: '要导入的环境的名称'
+messages:
+  imported: '网站已成功导入。你可能想运行 `drupal site:debug` 来确认一切顺利。'
+  error-missing: '目录“%s“不存在。'
+  error-not-drupal: '这不是一个有效的 drupal 根目录：“%s“'
+  error-writing: '尝试写入配置文件时出现错误：“%s“'
+questions:
+  directory: '输入安装 Drupal 的目录名称'
+  name: '输入站点的名称'
+  environment: '输入站点环境名称'
+examples:
+  - description: '导入本地 drupal 项目，指定站点名称和路径'
+    execution:
+      drupal site:import:local  SiteName /private/var/www/vhost/anexusit/drupal8.dev/web

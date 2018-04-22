@@ -1,0 +1,15 @@
+description: '运行 PHP 内置的 Web 服务器'
+arguments:
+  address: '地址:端口值'
+messages:
+  executing: '从“%s”执行 php。'
+  listening: '监听 “%s”。'
+errors:
+  binary: '无法找到 PHP 二进制程序运行服务器。'
+examples:
+  - description: '使用默认地址参数值 127.0.0.1:8088 运行'
+    execution: 'drupal 服务器'
+  - description: '传递地址参数以使用不同的端口号'
+    execution: 'drupal server 127.0.0.1:8089'
+  - description: '运行默认地址参数值，使用 --root 选项定义 Drupal 根目录'
+    execution: 'drupal --root=/var/www/drupal8.dev server'

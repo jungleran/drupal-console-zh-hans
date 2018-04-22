@@ -1,0 +1,13 @@
+description: '清除帐户登录尝试失败次数。'
+help: '<info>user:login:clear:attempts</info>命令重置帐户登录尝试失败次数。'
+options:
+    user-id: '用戶 ID'
+questions:
+    uid: '输入用户 ID'
+    numeric-uid: 'ID 必须为整数'
+    invalid-uid: '用户 ID 必须大于零。'
+messages:
+    successful: '用户 ID“%s” 的登录尝试次数已成功清除。'
+errors:
+    invalid-user: '无法加载用户实体（Uid：“%s“）。'
+    no-flood: '系统上没有 flood 表。'

@@ -1,0 +1,18 @@
+description: '下载主题到应用程序'
+arguments:
+  version: '主题版本，例如：1.x-dev'
+  theme: '主题名称'
+options:
+  composer: '使用 --composer 选项管理使用 Composer 下载的主题'
+messages:
+  no-releases: '主题%s“没有发布任何版本'
+  getting-releases: '获取主题“%s“发布的版本'
+  downloading: '下载主题“%s“ 版本 ”%s“'
+  downloaded: '主题“%s“版本”%s“成功下载至”%s“'
+  select-release: '请选择您最喜欢的版本'
+  outside-drupal: 'Drupal root 目录无法确定。使用--root 设置目标文件夹，如果不设置将使用当前文件夹。'
+  error-creating-folder: '创建文件夹%s“时出错，请检查您的权限'
+examples:
+  - description: '下载指定名称和版本的主题'
+    execution: |
+      drupal theme:download  Alina 7.x-1.2

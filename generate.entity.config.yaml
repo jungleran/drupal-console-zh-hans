@@ -1,0 +1,25 @@
+description: '生成一个新的配置实体'
+help: ''
+options:
+  module: common.options.module
+  entity-class: '配置实体类'
+  entity-name: '配置实体名称'
+  label: '标签'
+  bundle-of: '作为内容实体的 Bundle'
+  base-path: '配置实体路由的基本路径'
+questions:
+  module: common.questions.module
+  entity-class: '输入您的新配置实体的类'
+  entity-name: '输入新配置实体的名称'
+  label: '输入新配置实体的标签'
+  bundle-of: '要将此（配置）实体作为其 Bundle 的内容实体名称'
+  base-path: '配置实体路由的基本路径'
+examples:
+  - description: '生成指定模块，实体类，实体名称，路径和标签的配置实体'
+    execution: |
+      drupal generate:entity:config  \
+        --module="modulename"  \
+        --entity-class="DefaultEntity"  \
+        --entity-name="default_entity"  \
+        --base-path="/admin/structure"  \
+        --label="Default entity"

@@ -1,0 +1,4 @@
+description: '添加一种被您网站支持的语言'
+messages:
+  invalid-language: '语言 ”%s“是一种无效的语言'
+  language-add-successfully: '语言 ”%s“成功添加。'

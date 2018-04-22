@@ -1,0 +1,16 @@
+description: '复制配置文件'
+options:
+  destination: '文件复制目标目录'
+  override: '覆盖配置文件标志'
+  autocomplete: '自动补全工具文件标志。'
+questions:
+  destination: '选择要复制配置的目的地'
+  autocomplete: '生成自动补全文件'
+  language: '选择语言'
+  temp: '输入临时文件路径'
+  chain: '复制链文件的例子'
+  sites: '复制网站别名文件示例'
+  temp: '输入临时文件路径'
+  learning: '显示用于学习目的信息？'
+  generate-inline: '显示执行命令的内联表示？'
+  generate-chain: '显示执行命令的链表示？'

@@ -1,0 +1,43 @@
+description: '生成规则动作插件'
+help: ' <info>generate:plugin:rulesaction</info> 命令可以帮助您生成新的规则动作插件。'
+welcome: '欢迎来到 Drupal 规则动作插件生成器'
+options:
+  module: common.options.module
+  class: '插件类名'
+  label: '插件标签'
+  plugin-id: '插件 ID'
+  inputs: common.options.inputs
+  services: common.options.services
+  category: '插件类别'
+  context: '插件上下文'
+  type: '动作类型（用户或节点）'
+questions:
+  module: common.questions.module
+  class: '输入类的名称'
+  label: '输入插件标签'
+  plugin-id: '输入插件 ID'
+  inputs: common.questions.inputs
+  services: common.questions.services
+  category: '输入插件类别'
+  context: '输入插件上下文'
+examples:
+  - description: '生成指定模块名称，类，其标签，插件ID，类型，类别及其上下文的用户规则动作插件'
+    execution: |
+      drupal generate:plugin:rulesaction  \
+        --module="modulename"  \
+        --class="DefaultAction"  \
+        --label="Default action"  \
+        --plugin-id="default_action"  \
+        --type="user"  \
+        --category="default_action"  \
+        --context="default_action"
+  - description: '生成指定模块名称，类，其标签，插件ID，类型，类别及其上下文的用户规则动作插件'
+    execution: |
+      drupal generate:plugin:rulesaction  \
+        --module="modulename"  \
+        --class="DefaultAction"  \
+        --label="Default action"  \
+        --plugin-id="default_action"  \
+        --type="node"  \
+        --category="default_action" \
+        --context="default_action"

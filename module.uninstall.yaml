@@ -1,0 +1,19 @@
+description: '在应用程序中卸载模块'
+questions:
+  module: '模块名称（按<回车>停止添加模块）'
+  invalid-module: '无效模块“%s“'
+options:
+  module: '要卸载的一个或多个模块应该用空格分隔'
+  force: '你想忽略依赖关系，强制卸载模块吗？'
+  composer: '使用 Composer 卸载模块'
+messages:
+  no-modules: '您必须提供要卸载的模块。'
+  dependents: '无法卸载模块“%s“因为”%s“依赖它'
+  nothing: '什么都不做 所有模块都已卸载'
+  success: '以下模块已成功卸载：“%s“'
+  missing: '无法卸载模块“%s“由于缺少模块”%s“'
+  composer-success: '您现在应该执行以下命令："composer remove vendor/package"'
+examples:
+  - description: '卸载指定模块名称的模块'
+    execution: |
+      drupal module:uninstall  modulename

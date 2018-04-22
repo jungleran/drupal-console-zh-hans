@@ -1,0 +1,16 @@
+description: '覆盖状态键。'
+help: '覆盖状态键。'
+arguments:
+  key: '要覆盖的状态键'
+  value: '要设置的状态值'
+messages:
+  key: '状态键'
+  original: '原始值'
+  override: '覆盖值'
+errors:
+  no-key: '您必须提供一个状态键来覆盖。'
+  no-value: '您必须提供状态值用于设置。'
+examples:
+  - description: '覆盖指定状态名和新值的状态值'
+    execution: |
+      drupal state:override  comment.node_comment_statistics_scale "!!浮动 1"

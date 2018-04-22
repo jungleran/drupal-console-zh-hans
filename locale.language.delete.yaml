@@ -1,0 +1,4 @@
+description: '删除您网站支持的语言'
+messages:
+  invalid-language: '语言 ”%s“这是一个无效的语言'
+  language-deleted-successfully: '语言 ”%s“已成功删除'

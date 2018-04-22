@@ -1,0 +1,27 @@
+description: '删除应用程序的用户'
+help: '<info>user:delete</info> 命令可以帮助您删除用户。'
+welcome: '欢迎来到 Drupal 用户删除'
+options:
+  user-id: '要删除的用户 ID'
+  roles: '欲删除用户关联的角色'
+questions:
+  user-id: '要删除的用户 ID（留空跳过）'
+  roles: '选择与欲删除用户关联的角色'
+messages:
+  user-id: '用戶 ID'
+  username: '用户名'
+  user-deleted: '用户“%s“已成功删除'
+  users-deleted: '“%s“用户被成功删除'
+errors:
+  invalid-user-id: '用户 ID ”%s“ 无效'
+  invalid-user: '用户 ID ”%s“ 无效'
+examples:
+  - description: '删除用户通过指定用户 id 和用户角色'
+    execution: |
+      drupal user:delete  \
+        --user-id="2"
+        --roles='authenticated'
+  - description: '删除用户指定其 ID'
+    execution: |
+      drupal user:delete  \
+        --user-id="3"

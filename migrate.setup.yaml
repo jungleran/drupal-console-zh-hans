@@ -1,0 +1,24 @@
+description: '为提供的遗留数据库加载并创建相关迁移'
+options:
+    db-type: 'Drupal 数据库类型'
+    db-host: '数据库主机'
+    db-name: '数据库名称'
+    db-user: '数据库用户'
+    db-pass: '数据库密码'
+    db-prefix: '数据库前缀'
+    db-port: '数据库端口'
+    source-base_path:  '包含源站点的本地文件目录（例如：/var/www/docroot）或您的站点地址（例如：http://example.com）'
+questions:
+    db-type: 'Drupal 数据库类型'
+    db-host: '数据库主机'
+    db-name: '数据库名称'
+    db-user: '数据库用户'
+    db-pass: '数据库密码'
+    db-prefix: '数据库前缀'
+    db-port: '数据库端口'
+    source-base_path:  '包含源站点的本地文件目录（例如：/var/www/docroot）或您的站点地址（例如：http://example.com）'
+messages:
+    not-drupal: '源数据库不包含可识别的 Drupal 版本。'
+    migrations-created: '“%s“成功创建迁移”%s”。'
+    migrations-not-found: "没有可用的迁移"
+    migrations-already-exist: '可用的所有迁移都已创建'

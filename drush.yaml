@@ -1,0 +1,3 @@
+description: 'Drupal Console equivalents'
+messages:
+  not-found: 'Drush 命令没有找到'

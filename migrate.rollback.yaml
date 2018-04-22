@@ -1,0 +1,6 @@
+description: '回滚一个或多个迁移'
+arguments:
+    id: '迁移 ID'
+messages:
+    not-available: '迁移 ID“%s“无效'
+    processing: '回滚“%s“完成'

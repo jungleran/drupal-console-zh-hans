@@ -1,0 +1,19 @@
+description: '生成自定义视图字段插件。'
+help: '<info>generate:plugin:views:field</info> 命令可以帮助您生成新的自定义视图字段插件。'
+options:
+  class: '视图字段插件类名'
+  title: '视图字段插件标题'
+  description: '视图字段插件说明'
+questions:
+  class: '视图字段插件类名'
+  title: '视图字段插件标题'
+  description: '视图字段插件说明'
+  description_default: '我自定义的视图字段插件。'
+examples:
+  - description: '生成一个自定义视图字段插件，指定模块名称，类，标题及其描述'
+    execution: |
+      drupal generate:plugin:views:field  \
+        --module="modulename"  \
+        --class="CustomViewsField"  \
+        --title="Custom views field"  \
+        --description="My awesome custom views field plugin."

@@ -1,0 +1,18 @@
+description: 列出可用的翻译更新
+arguments:
+  language: 语言 es 或西班牙语
+messages:
+  no-languages: "没有可翻译的语言。先添加语言。"
+  up-to-date: "所有翻译均已更新至最新版."
+  no-translations: '没有翻译状态可用。手动检查'
+  project: '项目'
+  version: '版本'
+  local-age: '当地时间'
+  remote-age: '远程时间'
+  info: 信息
+  no-translation-files: '没有为开发版本提供翻译文件。'
+  file-not-found: '文件找不到“%s“也不在”%s“'
+  local-file-not-found: '文件找不到“%s“'
+  translation-not-determined: "无法确定翻译文件位置。"
+  translation-project-updated: '已更新'
+  translation-project-available: '新的翻译可用'

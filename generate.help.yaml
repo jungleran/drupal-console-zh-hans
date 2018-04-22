@@ -1,0 +1,12 @@
+description: '生成一个 hook_help() 的实现'
+help: '<info>"%s"</info> 命令可以帮助您生成新的帮助钩子 ”%s“'
+options:
+questions:
+messages:
+  help-already-implemented: '帮助钩子模块“%s“已经实现'
+examples:
+  - description: '生成一个钩子帮助，指定模块名称和描述'
+    execution: |
+      drupal generate:help  \
+        --module="modulename"  \
+        --description="My Awesome Module"

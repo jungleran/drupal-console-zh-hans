@@ -1,0 +1,20 @@
+description: '生成新的内容类型（节点/实体 Bundle）'
+help: '使用：generate:contenttype <fancy> <Fancy> 创建一个新的内容类型，其机读名称为 fancy，可读名称为 Fancy。'
+welcome: '欢迎使用 Drupal 内容类型生成器'
+options:
+  module: common.options.module
+  bundle-name: '内容类型的机读名称'
+  bundle-title: '内容类型的可读名称'
+questions:
+  module: common.questions.module
+  bundle-name: '输入新内容类型的机读名称'
+  bundle-title: '输入新内容类型的可读名称'
+message:
+  error-state1: 占位符
+examples:
+  - description: '生成指定模块的 bundle 实体，bundle 名称及其标题'
+    execution: |
+      drupal generate:entity:bundle  \
+        --module="modulename"  \
+        --bundle-name="default"  \
+        --bundle-title="default"

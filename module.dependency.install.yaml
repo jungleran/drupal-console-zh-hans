@@ -1,0 +1,11 @@
+description: '在应用程序中安装依赖模块'
+arguments:
+  module: '要启用的一个或多个模块应该用空格分隔'
+messages:
+  no-depencies: '什么都不做 这个模块没有依赖安装'
+  installing: '安装模块“%s“'
+  success: '以下模块已成功安装：%s“'
+examples:
+    - description: '安装指定模块的依赖'
+      execution: |
+        drupal module:dependency:install  modulename

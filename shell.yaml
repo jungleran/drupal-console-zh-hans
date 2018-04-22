@@ -1,0 +1,2 @@
+description: '打开一个提供交​​互式 REPL（Read-Eval-Print-Loop）的 shell。'
+help: '此命令为 psysh 提供了一个包装器。开发者运行时控制台，交互式调试器和 PHP 的 REPL。'

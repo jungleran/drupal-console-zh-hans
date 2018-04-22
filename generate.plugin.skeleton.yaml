@@ -1,0 +1,20 @@
+description: '生成一个插件实现的框架'
+help: ' <info>"%s"</info 命令可以帮助您生成新的插件框架 "%s"。'
+options:
+  module: common.options.module
+  plugin: '插件 ID'
+  class: '插件类名'
+questions:
+  module: common.questions.module
+  plugin: '输入插件 ID'
+  class: '输入类的名称'
+messages:
+  plugin-dont-exist: '插件“%s“ 不存在。'
+  plugin-generator-implemented: '插入 ”%s“已经有了一个高级的命令生成器，请使用”%s“'
+examples:
+  - description: '生成一个指定模块名称，插件 ID 和类的插件框架'
+    execution: |
+      drupal generate:plugin:skeleton  \
+        --module="modulename"  \
+        --plugin-id="link_relation_type"  \
+        --class="DefaultLinkRelationType"

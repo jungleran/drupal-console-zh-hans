@@ -1,0 +1,28 @@
+description: "设置新的多站点安装的文件。"
+help: "<info>multisite:new</info> 命令通过创建所需的子目录和文件来协助设置新的多站点安装，并且可以选择复制现有的“默认”安装。"
+arguments:
+  directory: "应该创建到“sites”目录下的目录名称。"
+  uri: "要添加到 sites.php 的站点 URI。"
+options:
+  copy-default: "从默认安装中复制现有站点。"
+errors:
+  subdir-empty: "您必须指定要创建的多站点子目录。"
+  subdir-exists: '“sites/%s“目录已经存在。'
+  default-missing: "sites/default 目录缺失。"
+  mkdir-fail: '无法创建“sites/%s”。请检查站点目录权限，然后重试。'
+  sites-invalid: "找到的 sites.php 文件不可读或不是一个文件。"
+  sites-missing: "没有可复制的 sites.php 或 example.sites.php 文件。"
+  sites-other: "尝试写入 sites.php 时遇到问题"
+  file-missing: '复制文件，文件 ”%s“没有找到。'
+  copy-fail: '无法复制“%s“ 到 ”%s”。请检查权限，然后重试。'
+  write-fail: '无法写入文件%s。请检查文件权限，然后重试。'
+  chmod-fail: '无法更改文件的权限“%s”。请确保该文件的权限正确。'
+warnings:
+  missing-files: "找不到 sites/default/files 目录。文件目录需要手动创建。"
+messages:
+  copy-default: '默认安装已成功复制到“sites/%s”。'
+  fresh-site: '新的多站点结构在“sites/%s“并准备安装。'
+examples:
+  - description: '设置指定目标路径和 URI 的多站点安装文件'
+    execution: |
+      drupal multisite:new  vendor/newsite http://mysite.example.com

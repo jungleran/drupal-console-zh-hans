@@ -1,0 +1,28 @@
+description: '查看当前的 Drupal 安装状态'
+messages:
+  application: 应用程序
+  system: '系统信息'
+  hash-salt: '哈希盐'
+  console: 'Drupal Console'
+  database: '数据库连接'
+  driver: '驱动'
+  host: '主机'
+  port: '端口'
+  username: '用户名'
+  password: '密码'
+  theme: '主题'
+  connection: '连接'
+  theme-default: '默认主題'
+  theme-admin: '管理主题'
+  directory: '目录'
+  directory-root: '站点根目录'
+  directory-temporary: '站点临时目录'
+  directory-theme-default: '默认主题目录'
+  directory-theme-admin: '管理主题目录'
+  current-version: '当前 Drupal（“%s“）'
+  not-installed: '没有安装 Drupal'
+examples:
+  - description: '获取 drupal 安装状态，指定输出格式为表格'
+    execution: |
+      drupal site:status  \
+        --format="table"

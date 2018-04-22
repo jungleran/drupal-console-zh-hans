@@ -1,0 +1,32 @@
+description: '生成一个区块插件'
+help: ' <info>generate:plugin:block</info>命令可以帮助您生成新的区块插件。'
+welcome: '欢迎来到 Drupal 区块插件生成器'
+options:
+  module: common.options.module
+  class: '插件类名'
+  label: '插件标签'
+  plugin-id: '插件 ID'
+  inputs: common.options.inputs
+  services: common.options.services
+  theme-region: '呈现区块插件的主题区域'
+questions:
+  module: common.questions.module
+  class: '输入类的名称'
+  label: '输入插件标签'
+  plugin-id: '输入插件 ID'
+  inputs: common.questions.inputs
+  services: common.questions.services
+  theme-region: '输入呈现区块插件的主题区域。'
+messages:
+  inputs: "\n您可以添加输入字段以在块中创建特殊配置。选填，按下<info>回车</info> <info>继续</info>"
+  invalid-theme-region: '区域“%s“ 无效'
+examples:
+  - description: '在 header 区域生成一个包含输入字段的区块插件，指定模块名称，类，标签，其 ID，区域和输入'
+    execution: |
+      drupal generate:plugin:block  \
+        --module="modulename"  \
+        --class="DefaultBlock"  \
+        --label="Default block"  \
+        --plugin-id="default_block"  \
+        --theme-region="header"  \
+        --inputs='"name":"inputtext", "type":"text_format", "label":"InputText", "options":"", "description":"Just an input text", "maxlength":"", "size":"", "default_value":"", "weight":"0", "fieldset":""'

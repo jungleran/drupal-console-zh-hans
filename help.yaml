@@ -1,0 +1,19 @@
+description: '显示命令的帮助'
+help: |
+        <info>%ccommand.name%</info> 命令显示给定命令的帮助：
+
+        <info>php %command.full_name% list</info>
+
+        您还可以使用<comment>--format</comment>选项输出其他格式的帮助：
+
+        <info>php %command.full_name% --format=xml list</info>
+
+        要显示可用命令列表，请使用 <info>list</info> 命令。
+arguments:
+    command-name: '命令名称'
+options:
+    xml: '以 XML 格式输出列表'
+    raw: '输出原始命令列表'
+    format: '输出格式（txt，xml，json或md）'
+messages:
+    deprecated: '版本2.7中已经弃用了 <comment>--xml</comment>选项，并将在 3.0 版中删除。请改用<comment>--format</comment>选项'

@@ -1,0 +1,16 @@
+description: '生成迁移处理插件'
+help: '为迁移创建新的处理插件。'
+options:
+  module: common.options.module
+  class: '插件类名'
+  plugin-id: '插件 ID'
+questions:
+  class: '输入迁移处理插件类名'
+  plugin-id: '输入迁移处理插件 ID'
+examples:
+  - description: '生成指定模块名称，类及其ID的迁移处理插件'
+    execution: |
+      drupal generate:plugin:migrate:process  \
+        --module="modulename"  \
+        --class="MigrationProcess"  \
+        --plugin-id="migrationprocess"

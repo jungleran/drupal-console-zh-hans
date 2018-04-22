@@ -1,0 +1,51 @@
+description: '生成字段类型，小部件和格式化器插件。'
+help: '<info>generate:plugin:field</info> 命令可以帮助您生成一整套字段插件：字段类型，字段格式化器和字段小部件。'
+welcome: '欢迎来到 Drupal 字段插件生成器'
+options:
+  module: common.options.module
+  type-class: '字段类型插件类名'
+  type-label: '字段类型插件标签'
+  type-plugin-id: '字段类型插件 ID'
+  type-description: '字段类型插件描述'
+  formatter-class: '字段格式化器插件类名'
+  formatter-label: '字段格式化器插件标签'
+  formatter-plugin-id: '字段格式化器插件 ID'
+  widget-class: '字段小部件插件类名称'
+  widget-label: '字段小部件插件标签'
+  widget-plugin-id: '字段小部件插件 ID'
+  field-type: '格式化器和小部件插件可以使用的字段类型'
+  default-widget: '字段类型插件的默认字段小部件'
+  default-formatter: '字段类型插件的默认字段格式化器'
+questions:
+  module: common.questions.module
+  type-class: '字段类型插件类名'
+  type-label: '输入字段类型插件标签'
+  type-plugin-id: '输入字段类型插件 ID'
+  type-description: '输入字段类型插件描述'
+  formatter-class: '输入字段格式化器插件类名'
+  formatter-label: '输入字段格式化器插件标签'
+  formatter-plugin-id: '输入字段格式化器插件 ID'
+  widget-class: '输入字段小部件插件类名称'
+  widget-label: '输入字段小部件插件标签'
+  widget-plugin-id: '输入字段小部件插件 ID'
+  field-type: '格式化器和小部件插件可以使用的字段类型'
+  default-widget: '字段类型插件的默认字段小部件'
+  default-formatter: '字段类型插件的默认字段格式化器'
+examples:
+  - description: '生成指定模块名称，类型（类，标签，插件ID和描述），格式化器（类，标签，插件标识）和小部件（类，标签和插件ID）的字段类型，小部件和格式化器插件'
+    execution: |
+      drupal generate:plugin:field  \
+        --module="modulename"  \
+        --type-class="ExampleFieldType"  \
+        --type-label="Example field type"  \
+        --type-plugin-id="example_field_type"  \
+        --type-description="My Field Type"  \
+        --formatter-class="ExampleFormatterType"  \
+        --formatter-label="Example formatter type"  \
+        --formatter-plugin-id="example_formatter_type"  \
+        --widget-class="ExampleWidgetType"  \
+        --widget-label="Example widget type"  \
+        --widget-plugin-id="example_widget_type"  \
+        --field-type="example_field_type"  \
+        --default-widget="example_widget_type"  \
+        --default-formatter="example_formatter_type"

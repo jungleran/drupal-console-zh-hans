@@ -1,0 +1,13 @@
+description: '执行外部命令。'
+arguments:
+  bin: '可执行命令。'
+options:
+  working-directory: '当前工作目录。'
+messages:
+  success: '执行命令。'
+  invalid-bin: '执行命令时出错。'
+  missing-bin: '提供可执行命令。'
+  binary-not-found: '无法找到二进制文件 %s 执行命令。'
+  working-directory: '工作目录'
+  executing-command: '执行命令'
+

@@ -1,0 +1,69 @@
+description: '生成一个主题。'
+help: ' <info>generate:theme</info> 命令可以帮助您生成一个新的主题。'
+welcome: '欢迎来到 Drupal 主题生成器'
+options:
+  theme: '主题名称'
+  machine-name: '机读名称（仅限小写和下划线）'
+  theme-path: '主题的路径'
+  description: '主题说明'
+  core: '核心版本'
+  package: '主题包'
+  composer: '添加一个 composer.json 文件'
+  base-theme: '基主题（如：classy, stable）'
+  global-library: '全局样式库名称'
+  regions: 区域
+  breakpoints: 断点
+questions:
+  theme: '输入新的主题名称'
+  machine-name: '输入主题机读名称'
+  theme-path: '输入主题路径'
+  description: '输入主题描述'
+  core: '输入 Drupal 核心版本'
+  package: '输入包名称'
+  dependencies: '您要添加模块依赖关系吗？'
+  invalid-theme: '无效“%s“主题被选中'
+  global-library: '输入全局样式库名称'
+  library-add: '要添加另一个库吗？'
+  library-name: '输入库名称'
+  library-version: '输入库版本'
+  regions: '要生成主题区域吗？'
+  region-name: '输入区域名称'
+  region-machine-name: '输入区域机读名称'
+  region-add: '要添加其他区域吗？'
+  breakpoints: '要生成主题断点吗？'
+  breakpoint-name: '输入断点名称'
+  breakpoint-label: '输入断点标签'
+  breakpoint-media-query: '输入断点媒体查询'
+  breakpoint-weight: '输入断点权重'
+  breakpoint-multipliers: '输入断点乘数'
+  breakpoint-add: '要再添加一个断点吗？'
+warnings:
+  module-unavailable: '警告以下模块在本地环境中尚不可用“%s“'
+errors:
+  directory-exists: '目标目录“%s“不为空'
+examples:
+  - description: '生成主题，没有区域，没有断点，指定主题名称，机读名称，主题路径，描述，drupal 核心，包名称和全局库'
+    execution: |
+      drupal generate:theme  \
+        --theme="AnotherTheme"  \
+        --machine-name="anothertheme"  \
+        --theme-path="/themes/custom"  \
+        --description="My Awesome theme"  \
+        --core="8.x"  \
+        --package="PackageName"  \
+        --global-library="global-styling"  \
+        --base-theme="false"
+  - description: '生成一个基于 stable 主题的主题，其中定义了两个区域，一个断点，指定主题名称，机读名称，主题路径，描述，drupal 核心，包名称，全局库，基主题，区域和断点'
+    execution: |
+      drupal generate:theme  \
+        --theme="MyTheme"  \
+        --machine-name="mytheme"  \
+        --theme-path="/themes/custom"  \
+        --description="My Awesome theme"  \
+        --core="8.x"  \
+        --package="MyThemePackage"  \
+        --global-library="global-styling"  \
+        --base-theme="stable"  \
+        --regions='"region_name":"Content", "region_machine_name":"content"'  \
+        --regions='"region_name":"Panel", "region_machine_name":"panel"'  \
+        --breakpoints='"breakpoint_name":"narrow", "breakpoint_label":"narrow", "breakpoint_media_query":"all and (min-width: 560px) and (max-width: 850px)", "breakpoint_weight":"1", "breakpoint_multipliers":"1x"'

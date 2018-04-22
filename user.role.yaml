@@ -1,0 +1,20 @@
+description: '添加/删除给定用户的角色'
+help: '<info>user:role</info> 命令可帮助您向用户添加或删除角色。'
+welcome: '欢迎使用 Drupal 用户规则'
+arguments:
+  roles: '添加或删除的角色。请提供机读名称（仅一个）'
+  operation: '添加或删除'
+  user: '受影响的用户（只有一个）'
+messages:
+  bad-arguments: '一些参数缺失！请提供以下所有参数：[add/remove] [username] [role]'
+  no-user-found: '用户名 ”%s“ 没找到！'
+  no-role-found: '角色“%s“ 没找到！'
+  add-success: '成功增加用户名 %1$s 的角色 %2$s'
+  remove-success: '成功删除用户名 %1$s 的角色 %2$s'
+examples:
+  - description: '将管理员角色添加到用户 admin，指定用户名和角色'
+    execution: |
+      drupal user:role  add admin administrator
+  - description: '从指定用户名和角色的用户 admin 中删除管理员角色'
+    execution: |
+      drupal user:role  remove admin administrator

@@ -1,0 +1,21 @@
+description: '生成具有注释发现的插件类型'
+help: '<info>generate:plugin:type:annotation</info> 命令可帮助您生成使用注释发现的新插件类型。'
+welcome: '欢迎来到 Drupal 插件类型生成器'
+options:
+  module: common.options.module
+  class: '插件类型类名'
+  machine-name: '插件类型机读名称'
+  label: '插件类型标签'
+questions:
+  module: common.questions.module
+  class: '输入插件类型类名'
+  machine-name: '输入插件类型的机读名称'
+  label: '输入插件类型标签'
+examples:
+  - description: '生成具有注释发现的插件，指定模块名称，类名，机读名称和标签'
+    execution: |
+      drupal generate:plugin:type:annotation  \
+        --module="modulename"  \
+        --class="ExamplePlugin"  \
+        --machine-name="example_plugin"  \
+        --label="Example plugin"

@@ -1,0 +1,10 @@
+description: '禁用视图'
+messages:
+  disabled-successfully: '视图“%s“成功地被禁用'
+examples:
+  - description: '禁用内容视图'
+    execution: |
+      drupal views:disable  content
+  - description: '禁用首页视图'
+    execution: |
+      drupal views:disable  frontpage

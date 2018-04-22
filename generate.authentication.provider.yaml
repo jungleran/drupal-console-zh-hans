@@ -1,0 +1,13 @@
+description: '生成认证提供者'
+help: ' <info>generate:authentication:provider</info> 命令可以帮助您生成新认证提供者。'
+options:
+    class: '认证提供者类'
+    provider-id: '提供者 ID'
+module: common.options.module
+examples:
+  - description: '生成指定模块，类和提供者 ID 的认证提供者'
+    execution: |
+      drupal generate:authentication:provider  \
+        --module="modulename"  \
+        --class="DefaultAuthenticationProvider"  \
+        --provider-id="default_authentication_provider"

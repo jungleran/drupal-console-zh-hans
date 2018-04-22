@@ -1,0 +1,18 @@
+description: '查看有关字段的信息。'
+help: '查看有关字段的信息。'
+options:
+    detailed: '扩展输出，具有机器名称和说明'
+    entity: '限制到一个特定的可添加字段的实体类型，例如：node，comment，taxonomy_term，shortcut，block_content，contact_message'
+    bundle: '限制为特定的 Bundle 类型，例如：article'
+messages:
+    fields-none: '没有找到字段'
+    entity-type: '可添加字段实体类型'
+    bundle-type: 'Bundle 类型'
+    not-found: '未找到'
+    in-entity-type: '在实体类型'
+    in-bundle-type: '在 Bundle 类型'
+table:
+    header-name: '字段标签'
+    header-type: '字段类型'
+    header-desc: '字段描述'
+    header-usage: '也用在'

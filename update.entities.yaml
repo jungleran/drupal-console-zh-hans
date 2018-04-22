@@ -1,0 +1,9 @@
+description: '应用实体更新'
+messages:
+  start: '启动实体更新'
+  end: '完成实体更新'
+  error: '实体更新错误'
+examples:
+  - description: '更新实体'
+    execution: |
+      drupal update:entities

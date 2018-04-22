@@ -1,0 +1,8 @@
+description: '显示应用程序当前可用迁移'
+arguments:
+    tag: '迁移标签'
+messages:
+    id: '迁移 ID'
+    description: 描述
+    no-migrations: "没有可用迁移尝试执行命令：migrate:setup:migrations"
+    tags: 标签

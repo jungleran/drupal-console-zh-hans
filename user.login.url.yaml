@@ -1,0 +1,11 @@
+description: '返回一次性用户登录网址。'
+options:
+  user-id: '用戶 ID'
+messages:
+  url: '一次性登录“%s“：”%s“'
+errors:
+  invalid-user: '无法加载用户实体（用户ID：“%s“）。'
+examples:
+  - description: '获取用户 ID 1 的一次登录网址'
+    execution: |
+      drupal user:login:url  1

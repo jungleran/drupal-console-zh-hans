@@ -1,0 +1,10 @@
+description: '为应用程序重建路由'
+arguments:
+  route-name: '路由名称'
+messages:
+  rebuilding: '正在重建路由，请稍等'
+  completed: '完成路由重建。'
+examples:
+  - description: '重建路由'
+    execution:
+      drupal router:rebuild

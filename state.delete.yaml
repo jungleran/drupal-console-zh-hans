@@ -1,0 +1,11 @@
+description: '删除状态'
+arguments:
+  name: '状态名称'
+messages:
+  enter-name: '状态名必须包含一个值。'
+  state-not-exists: '状态“%s“ 不存在。'
+  deleted: '状态“%s“成功删除。'
+examples:
+  - description: '删除指定状态名称的状态'
+    execution: |
+      drupal state:delete  comment.maintain_entity_statistics

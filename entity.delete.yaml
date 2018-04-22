@@ -1,0 +1,15 @@
+description: '删除特定实体'
+help: '<info>entity:delete</info> 命令可帮助您删除实体。'
+arguments:
+  entity-definition-id: '实体定义 ID'
+  entity-id: '要删除的实体 ID'
+questions:
+  entity-type: '输入实体类型'
+  entity-definition-id: '输入实体定义 ID'
+  entity-id: '输入要删除的实体 ID'
+messages:
+  deleted: '实体 %s ID %s 被成功删除'
+examples:
+  - description: '使用节点 ID 删除实体类型的内容'
+    execution: |
+      drupal entity:delete node 1

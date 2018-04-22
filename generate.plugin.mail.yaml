@@ -1,0 +1,25 @@
+description: '生成一个邮件插件'
+help: '<info>generate:plugin:mail</info> 命令可以帮助您生成新的邮件插件。'
+welcome: '欢迎来到 Drupal 邮件插件生成器'
+options:
+  module: common.options.module
+  class: '插件类名'
+  label: '插件标签'
+  plugin-id: '插件 ID'
+  inputs: common.options.inputs
+  services: common.options.services
+questions:
+  module: common.questions.module
+  class: '输入插件类的名称'
+  label: '输入插件标签'
+  plugin-id: '输入插件 ID'
+  inputs: common.questions.inputs
+  services: common.questions.services
+examples:
+  - description: '生成指定模块名称，类，其标签和插件 ID 的电子邮件插件'
+    execution: |
+      drupal generate:plugin:mail  \
+        --module="modulename"  \
+        --class="HtmlFormatterMail"  \
+        --label="Html formatter mail"  \
+        --plugin-id="html_formatter_mail"

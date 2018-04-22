@@ -1,0 +1,37 @@
+description: '生成服务'
+help: '<info>generate:service</info> 命令可以帮助您生成新服务。'
+welcome: '欢迎来到 Drupal 服务生成器'
+options:
+  module: common.options.module
+  service-name: '服务名称'
+  class: '类名'
+  interface: 接口
+  services: common.questions.services
+  path:  路径
+questions:
+  module: common.questions.module
+  service-name: '输入服务名称：'
+  class: '输入类的名称'
+  interface: '创建一个接口'
+  interface-name: '输入接口名称'
+  services: common.options.services
+  path: '输入服务的路径'
+messages:
+  service-already-taken: '服务名称已经被模块“%s“占用'
+examples:
+  - description: '生成不含接口的服务，指定模块名称，服务名称，类及其路径'
+    execution: |
+      drupal generate:service  \
+        --module="modulename"  \
+        --name="modulename.default"  \
+        --class="DefaultService"  \
+        --path-service="/modules/custom/modulename/src/"
+  - description: '生成带接口的服务，指定模块名称，服务名称，类及其路径'
+    execution: |
+      drupal generate:service  \
+        --module="modulename"  \
+        --name="modulename.default"  \
+        --class="DefaultService"  \
+        --interface  \
+        --interface-name =“InterfaceName”\
+        --path-service="/modules/custom/modulename/src/"

@@ -1,0 +1,15 @@
+description: '更改 DrupalConsole 配置文件中的特定设置值'
+arguments:
+  name: 'YAML 格式的设置名称，以设置 Drupal Console 配置文件中的值'
+  value: '要在 Drupal Console 配置文件中设置的设置值'
+messages:
+  error-parsing: '解析 YAML 文件时发生错误“%s”。'
+  error-generating: '在配置文件中设置新语言时出错。'
+  error-writing: '写入配置文件时出错。'
+  success: '设置 ”%s“被设为”%s“'
+  missing-file: '“%s“配置文件丢失，尝试执行 `drupal init`'
+  missing-language: '提供的语言：“%s“，未找到'
+examples:
+  - description: '将应用程序语言设置值设置为“es”'
+    execution:
+      drupal settings:set  application.language es

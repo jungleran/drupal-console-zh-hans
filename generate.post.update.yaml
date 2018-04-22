@@ -1,0 +1,15 @@
+description: '生成一个 hook_post_update_NAME() 的实现'
+help: '<info>"%s"</info>  命令可以帮助您生成 hook_post_update_NAME()  ”%s“'
+options:
+  post-update-name: '后更新名称'
+questions:
+  post-update-name: '请提供要实现的后更新名称'
+messages:
+  wrong-post-update-name: '后更新名称“%s“ 无效'
+  post-update-name-already-implemented: '后更新名称“%s“已被实现'
+examples:
+  - description: '生成指定模块名称和后更新名称的后更新钩子实现'
+    execution: |
+      drupal generate:post:update  \
+        --module="modulename"  \
+        --post-update-name="PostUpdateName"
